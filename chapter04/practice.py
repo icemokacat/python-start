@@ -17,6 +17,10 @@
 # 참고: https://docs.python.org/ko/3/library/functions.html#float
 prices = ["1200", "3400", "5000", "800"]
 # TODO:
+total = int(prices[0]) + int(prices[1]) + int(prices[2]) + int(prices[3])
+print(total)
+avg = ( total / len(prices) )
+print('{:.1f}'.format(avg))
 # total = ...
 # avg = ...
 # print(total, f"{avg:.1f}")
@@ -33,6 +37,10 @@ prices = ["1200", "3400", "5000", "800"]
 # 참고: https://docs.python.org/ko/3/library/functions.html#divmod
 seconds = 3661
 # TODO:
+# 61분
+m,s = divmod(seconds,60)
+h,m = divmod(m,60)
+print(f'{h}시 {m}분 {s}초')
 # ...
 # print(f"{h}시 {m}분 {s}초")
 #
@@ -53,6 +61,9 @@ seconds = 3661
 # 참고: https://docs.python.org/ko/3/reference/expressions.html#slicings
 nums = [10, 20, 30, 40, 50, 60, 70]
 # TODO: print 4번
+print(nums[:3])
+print(nums[-2:])
+print(list(reversed(nums)))
 #
 # 기대 출력:
 # [10, 20, 30]
@@ -73,6 +84,11 @@ nums = [10, 20, 30, 40, 50, 60, 70]
 # 참고: https://docs.python.org/ko/3/tutorial/datastructures.html#more-on-lists
 data = [5, 2, 8, 3, 1]
 # TODO:
+data.sort()
+data.insert(0,100)
+print(data.pop())
+data.remove(3)
+print(data)
 # ...
 # print("popped:", popped)
 # print(data)
@@ -111,6 +127,9 @@ clone.append(99)
 # 참고: https://docs.python.org/ko/3/library/stdtypes.html#set-types-set-frozenset
 a = [1, 2, 2, 3, 3, 3, 4]
 b = [3, 4, 5, 6]
+setA = set(a)
+n = []
+
 # TODO: print 3번
 #
 # 기대 출력:
@@ -130,6 +149,7 @@ b = [3, 4, 5, 6]
 # 참고: https://peps.python.org/pep-3132/   (확장 언패킹  first, *rest = ...)
 x, y = 10, 20
 # TODO: swap
+y, x = x, y
 # print(x, y)   # 기대: 20 10
 
 scores = (90, 80, 70, 60, 50)
@@ -147,6 +167,7 @@ scores = (90, 80, 70, 60, 50)
 # 참고: https://docs.python.org/ko/3/library/stdtypes.html#dict.get
 item = {"name": "keyboard", "price": 27000}
 # TODO:
+
 # print(item.get(...))
 # for k, v in ...:
 #     print(f"{k}={v}")
