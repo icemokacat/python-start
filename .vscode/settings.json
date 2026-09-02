@@ -1,4 +1,7 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": ["./extra"],
+    "cursorpyright.analysis.typeCheckingMode": "basic",
+    "cursorpyright.analysis.extraPaths": ["./extra"]
 }
