@@ -96,3 +96,9 @@ active_emails = list(
     )
 )
 print(active_emails)
+
+# zip : 여러 객체 동시 루프 하면서 tuple 형태로 반환
+print('zip -----------')
+print(zip([1, 2, 3], ['a', 'b', 'c']))
+print(list(zip([1, 2, 3], ['a', 'b', 'c'])))
+# => [(1, 'a'), (2, 'b'), (3, 'c')]
