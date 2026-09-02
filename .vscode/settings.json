@@ -1,4 +1,8 @@
 {
+    "python.analysis.inlayHints.variableTypes": false,
+  "python.analysis.inlayHints.functionReturnTypes": false,
+  "python.analysis.inlayHints.callArgumentNames": "off",
+  "editor.inlayHints.enabled": "off",
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.extraPaths": ["./extra"],
